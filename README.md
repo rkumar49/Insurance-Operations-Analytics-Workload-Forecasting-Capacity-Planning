@@ -140,8 +140,9 @@ But hiring 20 permanent people would cost ~€1M per year and be wrong for summe
 
 **Net saving vs blanket hiring: ~€400k/year. SLA goes from 0% → 95%+.**
 
+---
 
-Tools I Used
+## Tools I Used
 
 Python — Pandas, NumPy for data · Matplotlib, Seaborn for charts · Statsmodels for forecasting
 
@@ -149,10 +150,11 @@ SQL — SQLite for storing data and calculating KPIs
 
 Forecasting — Holt-Winters Exponential Smoothing
 
-Version control — Git and GitHub
 
 
-What This Project Taught Me
+---
+
+## What This Project Taught Me
 
 Backlog compounds. A bad quarter doesn't just cost you that quarter — it costs you the next year.
 
@@ -162,7 +164,7 @@ Forecasting is a decision tool, not a prediction. The value isn't the number —
 
 Data quality matters. Even simulated data needs realistic patterns, or the forecast is meaningless.
 
+---
 
-
-Note
+## Note
 All data in this project is synthetic. No real customer or company data is used. The methodology transfers directly to real data — only the source changes.
