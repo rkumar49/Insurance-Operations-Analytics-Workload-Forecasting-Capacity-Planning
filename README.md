@@ -140,67 +140,9 @@ But hiring 20 permanent people would cost ~€1M per year and be wrong for summe
 
 **Net saving vs blanket hiring: ~€400k/year. SLA goes from 0% → 95%+.**
 
----
 
-## Project Structure
-Insurance-Operations-Analytics-Workload-Forecasting-Capacity-Planning/
-│
-├── data/
-│ └── insurance_operations_data.csv # 731 days of simulated data
-│
-├── scripts/
-│ ├── data_generation.py # Creates the synthetic data
-│ ├── load_to_sqlite.py # Loads CSV into SQLite
-│ ├── kpi_queries.sql # 10 SQL queries for KPIs
-│ ├── eda_analysis.py # Charts and insights
-│ └── forecast_model.py # Holt-Winters forecasting
-│
-├── outputs/
-│ ├── kpi_monthly.csv
-│ ├── kpi_weekly.csv
-│ ├── kpi_channel_split.csv
-│ ├── kpi_sla_breach.csv
-│ ├── kpi_worst_days.csv
-│ ├── kpi_quarterly.csv
-│ └── forecast_next_30_days.csv
-│
-├── charts/
-│ ├── 01_workload_vs_capacity.png
-│ ├── 02_backlog_trend.png
-│ ├── 03_lead_time.png
-│ ├── 04_fte_gap.png
-│ ├── 05_day_of_week.png
-│ ├── 06_monthly.png
-│ ├── 07_correlation.png
-│ ├── 08_forecast.png
-│ └── 09_forecast_fte_gap.png
-│
-├── .gitignore
-├── README.md
-└── requirements.txt
-
-text
-
----
-
-## How to Run
-
-```bash
-# 1. Install the libraries
-pip install -r requirements.txt
-
-# 2. Generate the data
-python scripts/data_generation.py
-
-# 3. Load into SQLite
-python scripts/load_to_sqlite.py
-
-# 4. Run the analysis and charts
-python scripts/eda_analysis.py
-
-# 5. Train the forecast model
-python scripts/forecast_model.py
 Tools I Used
+
 Python — Pandas, NumPy for data · Matplotlib, Seaborn for charts · Statsmodels for forecasting
 
 SQL — SQLite for storing data and calculating KPIs
@@ -209,7 +151,9 @@ Forecasting — Holt-Winters Exponential Smoothing
 
 Version control — Git and GitHub
 
+
 What This Project Taught Me
+
 Backlog compounds. A bad quarter doesn't just cost you that quarter — it costs you the next year.
 
 Averages hide problems. The team looks correctly sized on paper, but the timing is wrong.
@@ -218,8 +162,6 @@ Forecasting is a decision tool, not a prediction. The value isn't the number —
 
 Data quality matters. Even simulated data needs realistic patterns, or the forecast is meaningless.
 
-Author
-Rahul Kumar
 
 
 Note
